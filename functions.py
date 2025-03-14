@@ -105,11 +105,36 @@
 #     print(f"Hello {name}")
 # greetuser("Jose")
 
-######## fucntion that counts down from a given number
-def countDown(n):
-    if n<0:
-        n=-n
-    while n+1>0:
-        print(n)
-        n=n-1
-countDown(5)
+# ######## fucntion that counts down from a given number
+# def countDown(n):
+#     if n<0:
+#         n=-n
+#     while n+1>0:
+#         print(n)
+#         n=n-1
+# countDown(5)
+
+################ fuction that does not return anything
+
+def do_nothing():
+    pass  # The function does absolutely nothing
+
+# Example usage
+do_nothing()  # Calling this does nothing
+
+########## function that prints hello
+
+def printHello():
+    print("Hello")  # This function prints "Hello"
+
+
+####### funtion to screer screem
+def cleanScreen():
+    import os
+    os.system('cls' if os.name == 'nt' else 'clear')
+    return
+cleanScreen()
+
+#######
+def enjoyMarchBreak():
+    print("Enjoy your March Break")
